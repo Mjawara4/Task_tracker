@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Task Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Task Tracker</h1>
+        <form id="taskForm">
+            <label for="taskName">Task name:</label>
+            <input type="text" id="taskName" name="taskName" required>
+            
+            <label for="taskDescription">Description:</label>
+            <textarea id="taskDescription" name="taskDescription"></textarea>
+            
+            <label for="taskDeadline">Task deadline:</label>
+            <input type="date" id="taskDeadline" name="taskDeadline" required>
+            
+            <button type="submit">Add Task</button>
+        </form>
+        <table id="taskTable">
+            <thead>
+                <tr> 
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Deadline</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Task rows will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
